@@ -20,6 +20,7 @@ def get_japanese_emoticon(file_path, emoticon)
     value.each do |language, emoji|
       if value[language] = emoticon 
         return key
+      end
       #binding.pry
     end
   end
