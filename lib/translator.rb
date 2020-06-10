@@ -6,11 +6,9 @@ def load_library(file_path)
   require "yaml"
   emoticons = YAML.load_file(file_path)
   #binding.pry
-  emoticons.each_with_object({}) do |(key, value), final_hash|
+  final_result = emoticons.each_with_object({}) do |(key, value), final_hash|
+    emoticons[key] = {:english => value[0], :japanese => value[1]}
     binding.pry
-    value.each do |element|
-      emoticons[key] = {:english
-    end
   end
 end
 
