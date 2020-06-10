@@ -8,6 +8,9 @@ def load_library(file_path)
   #binding.pry
   emoticons.each_with_object({}) do |(key, value), final_hash|
     binding.pry
+    value.each do |element|
+      emoticons[key] = {:english
+    end
   end
 end
 
